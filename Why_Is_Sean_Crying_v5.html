@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Why is Sean Crying?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      background-color: #00796b;
+      color: white;
+    }
+
+    h1 {
+      font-size: 3rem;
+      animation: pop 1s ease-out;
+      margin: 0;
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      max-width: 80%;
+      margin-top: 40px;
+      border: 8px solid #00796b;
+      border-radius: 12px;
+    }
+
+    .scoreboard {
+      margin-top: 30px;
+      background-color: #004d40;
+      display: inline-block;
+      padding: 20px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      color: white;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .scoreboard .score {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .scoreboard .name {
+      color: #b2dfdb;
+      font-size: 1.6rem;
+    }
+
+    .scoreboard .points {
+      font-size: 1.6rem;
+    }
+
+    .scoreboard .final {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #80cbc4;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      padding: 40px 20px;
+      font-size: 3rem;
+      font-weight: bold;
+      animation: pop 1s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Why is Sean Crying?</h1>
+  </header>
+
+  <main>
+    <div class="content-wrapper">
+      <img src="rusty_dunks_updated_1.png" alt="Rusty dunks on Sean">
+
+      <div class="scoreboard">
+        <div class="score">
+          <span class="name">Rusty</span>
+          <span class="points">11</span>
+        </div>
+        <div class="score">
+          <span class="name">Sean</span>
+          <span class="points">9</span>
+        </div>
+        <div class="final">Final</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Cause he just got dunked on
+  </footer>
+</body>
+</html>
